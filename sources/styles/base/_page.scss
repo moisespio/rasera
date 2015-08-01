@@ -1,0 +1,29 @@
+// @include font-face('bodoni_btitalic', 'bodoni-bt-italic-webfont', 'bodoni_btitalic', 'serif');
+
+body {
+    color: #000;
+    font-family: $main-font;
+}
+
+.hi {
+	@include position(fixed, 30px 30px null null);
+	background: $green;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	display: block;
+	span {
+		display: block;
+		width: 32px;
+		height: 28px;
+		background: url(../images/bubble.png) no-repeat center center;
+		background-size: 32px;
+		@include position(absolute, 50% null null 50%);
+		transform: translate(-50%, -50%);
+		line-height: 28px;
+		color: $green;
+		padding-left: 3px;
+		font-size: 14px;
+		box-sizing: border-box;
+	}
+}
