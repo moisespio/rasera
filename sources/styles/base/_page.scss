@@ -1,4 +1,8 @@
-// @include font-face('bodoni_btitalic', 'bodoni-bt-italic-webfont', 'bodoni_btitalic', 'serif');
+@keyframes shake{
+	0% { transform: rotateZ(0deg) translate(-50%, -50%); }
+	50% { transform: rotateZ(20deg) translate(-50%, -50%); }
+	100% { transform: rotateZ(0deg) translate(-50%, -50%); }
+}
 
 body {
     color: #000;
@@ -12,6 +16,8 @@ body {
 	height: 60px;
 	border-radius: 50%;
 	display: block;
+	z-index: 10;
+	transition: all 150ms ease;
 	span {
 		display: block;
 		width: 32px;
@@ -25,5 +31,13 @@ body {
 		padding-left: 3px;
 		font-size: 14px;
 		box-sizing: border-box;
+		transition: all 150ms ease;
+	}
+	&:hover {
+		background: $blue;
+		span {
+			color: $blue;
+			animation: shake 0.7s;
+		}
 	}
 }

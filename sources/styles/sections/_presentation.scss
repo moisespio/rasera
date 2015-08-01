@@ -36,6 +36,21 @@
 				margin: 0 10px;
 				a {
 					color: $green;
+					text-decoration: none;
+					position: relative;
+					&:after {
+						width: 0%;
+						height: 1px;
+						@include position(absolute, null null 0 0);
+						content: '';
+						background: $green;
+						transition: all 150ms ease;
+					}
+					&:hover {
+						&:after {
+							width: 100%;
+						}
+					}
 				}
 			}
 		}
