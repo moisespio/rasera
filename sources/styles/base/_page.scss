@@ -1,7 +1,7 @@
 @keyframes shake{
 	0% { transform: rotateZ(0deg) translate(-50%, -50%); }
-    30% { transform: rotateZ(3deg) translate(-50%, -50%); }
-    60% { transform: rotateZ(-3deg) translate(-50%, -50%); }
+    25% { transform: rotateZ(-6deg) translate(-50%, -50%); }
+    75% { transform: rotateZ(3deg) translate(-50%, -50%); }
 	100% { transform: rotateZ(0deg) translate(-50%, -50%); }
 }
 
@@ -39,7 +39,7 @@ body {
 		background: $blue;
 		span {
 			color: $blue;
-			animation: shake 0.3s;
+			animation: shake 300ms;
 		}
 	}
 }

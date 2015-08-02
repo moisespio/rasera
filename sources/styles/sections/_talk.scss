@@ -4,7 +4,7 @@
 	h1 {
 		color: $dark-blue;
 		font-weight: 600;
-		font-size: 70px;
+		font-size: 80px;
 		text-transform: uppercase;
 		margin-bottom: 80px;
 	}
@@ -23,7 +23,7 @@
 				&:after {
 					width: 0%;
 					height: 2px;
-					@include position(absolute, null null 0 0);
+					@include position(absolute, 25px null 0 0);
 					content: '';
 					background: $green;
 					/*transition: all 150ms ease;*/
@@ -37,17 +37,41 @@
 		}
 	}
 	.button {
+        margin-top: 80px;
 		display: inline-block;
 		border: 2px solid $green;
 		padding: 20px 60px;
 		border-radius: 50px;
 		color: $green;
 		text-decoration: none;
-		margin-top: 80px;
 		transition: all 150ms ease;
 		&:hover {
 			background: $green;
 			color: white;
 		}
 	}
+}
+
+
+
+
+
+
+/* Media queries */
+
+@media (max-width: 992px) {
+
+#presentation .content h1 { font-size: 80px; }
+#presentation .content .typed-cursor { font-size: 110px; }
+    
+    .owl-nav {
+         display: none;
+     }
+}
+
+@media (max-width: 768px ) {
+
+#presentation .content h1 { font-size: 40px; }
+#presentation .content .typed-cursor { font-size: 60px; }
+
 }
