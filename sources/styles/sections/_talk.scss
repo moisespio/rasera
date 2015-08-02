@@ -1,0 +1,53 @@
+#talk {
+	text-align: center;
+	padding: 200px 0;
+	h1 {
+		color: $dark-blue;
+		font-weight: 600;
+		font-size: 70px;
+		text-transform: uppercase;
+		margin-bottom: 80px;
+	}
+	p {
+		color: $grey;
+	}
+	ul {
+		margin-top: 20px;
+		li {
+			display: inline-block;
+			margin: 0 10px;
+			a {
+				color: $green;
+				text-decoration: none;
+				position: relative;
+				&:after {
+					width: 0%;
+					height: 2px;
+					@include position(absolute, null null 0 0);
+					content: '';
+					background: $green;
+					/*transition: all 150ms ease;*/
+				}
+				&:hover {
+					&:after {
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+	.button {
+		display: inline-block;
+		border: 2px solid $green;
+		padding: 20px 60px;
+		border-radius: 50px;
+		color: $green;
+		text-decoration: none;
+		margin-top: 80px;
+		transition: all 150ms ease;
+		&:hover {
+			background: $green;
+			color: white;
+		}
+	}
+}
