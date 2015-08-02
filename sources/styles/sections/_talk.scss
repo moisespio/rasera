@@ -71,7 +71,11 @@
 
 @media (max-width: 768px ) {
 
-#presentation .content h1 { font-size: 40px; }
-#presentation .content .typed-cursor { font-size: 60px; }
-
+    #presentation .content h1 { font-size: 40px; }
+    #presentation .content .typed-cursor { font-size: 60px; }
+    body { font-size: 15px; }
+    #about { line-height: 20pt; }
+    #about p { font-size: 20px; line-height: 30pt; }
+    h2 { margin-bottom: 20px; font-size: 20px; }
+    
 }
