@@ -1,0 +1,48 @@
+/*@media (max-width: 992px) {
+    // Presentation Title
+    #presentation .content h1 {
+        font-size: 80px;
+    }
+    #presentation .content .typed-cursor {
+        font-size: 110px;
+    }
+    .hi {
+        @include position(fixed, 10px 10px null null);
+    }
+    .owl-nav {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 15px;
+    }
+    h2 {
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+    #presentation .content h1 {
+        font-size: 40px;
+    }
+    #presentation .content .typed-cursor {
+        font-size: 60px;
+    }
+    #about {
+        line-height: 20pt;
+    }
+    #about p {
+        font-size: 20px;
+        line-height: 30pt;
+    }
+}
+
+::-moz-selection {
+    background: $green;
+    color: white;
+}
+
+::selection {
+    background: $green;
+    color: white;
+}*/

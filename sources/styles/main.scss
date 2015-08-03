@@ -1,15 +1,13 @@
 @import 'vendor/bootstrap/bootstrap';
 @import 'vendor/bourbon/bourbon';
 @import 'vendor/owl-carousel';
-
 @import 'helpers/variables';
 @import 'helpers/mixins';
-
 @import 'base/reset';
 @import 'base/page';
-
 @import 'sections/presentation';
 @import 'sections/about';
 @import 'sections/works';
-@import 'sections/works-details';
+@import 'sections/details';
 @import 'sections/talk';
+@import 'sections/media';
