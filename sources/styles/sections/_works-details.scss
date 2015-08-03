@@ -16,12 +16,16 @@
 			&.owl-prev {
 				background: url(../images/left.png) no-repeat center center;
 				background-size: 16px;
-				left: 40px;
+				left: 20px;
+                width: 40px;
+                height: 80px;
 			}
 			&.owl-next {
 				background: url(../images/right.png) no-repeat center center;
 				background-size: 16px;
-				right: 40px;
+				right: 20px;
+                width: 40px;
+                height: 80px;
 			}
 		}
 	}
@@ -46,16 +50,17 @@
 			.row {
 				position: relative;
 				height: 100%;
-				.col-md-4 {
+				.col-md-12 {
 					position: relative;
 					top: 50%;
 					transform: translateY(-50%);
+                    text-align: center;
 				}
 			}
 		}
 		h1 {
 			font-size: 70px;
-			font-weight: 600;
+			font-weight: 400;
 			color: white;
 			text-transform: uppercase;
 		}

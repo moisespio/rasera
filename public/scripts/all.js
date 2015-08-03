@@ -8,8 +8,12 @@ app.controller('mainController', function($scope, $timeout) {
 	$timeout(function () {
 		$('.carousel').owlCarousel({
 			items: 1,
-			nav: true,
-			navSpeed: 1000
+            nav :  true,
+            navSpeed : 500,
+
+            center:true,
+            URLhashListener:true,
+            startPosition: 'URLHash'
 		});
 	});
 });

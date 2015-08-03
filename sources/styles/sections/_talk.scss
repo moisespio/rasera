@@ -1,9 +1,9 @@
 #talk {
 	text-align: center;
-	padding: 200px 0;
+	padding: 180px 0;
 	h1 {
 		color: $dark-blue;
-		font-weight: 600;
+		font-weight: 700;
 		font-size: 80px;
 		text-transform: uppercase;
 		margin-bottom: 80px;
@@ -63,7 +63,7 @@
 
 #presentation .content h1 { font-size: 80px; }
 #presentation .content .typed-cursor { font-size: 110px; }
-    
+    .hi { @include position(fixed, 10px 10px null null);  }
     .owl-nav {
          display: none;
      }
@@ -78,4 +78,15 @@
     #about p { font-size: 20px; line-height: 30pt; }
     h2 { margin-bottom: 20px; font-size: 20px; }
     
+}
+
+::-moz-selection {
+    background: $green;
+    color: white;
+    
+}
+
+::selection {
+     background: $green;
+    color: white;
 }
