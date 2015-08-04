@@ -23,9 +23,9 @@
         div {
             position: absolute;
             top: 50%;
-            margin-top: -40px;
+            margin-top: -50px;
             width: 16px;
-            height: 80px;
+            height: 100px;
             z-index: 5;
             overflow: hidden;
             text-indent: -1000px;
@@ -34,13 +34,13 @@
                 background: url(../images/left.png) no-repeat center center;
                 background-size: 16px;
                 left: 20px;
-                width: 40px;
+                width: 60px;
             }
             &.owl-next {
                 background: url(../images/right.png) no-repeat center center;
                 background-size: 16px;
                 right: 20px;
-                width: 40px;
+                width: 60px;
             }
         }
     }
