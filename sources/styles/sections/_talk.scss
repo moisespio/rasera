@@ -1,6 +1,13 @@
 #talk {
     text-align: center;
-    padding: 160px 0;
+    /*padding: 160px 0;*/
+    
+    height: 100vh;
+    .content {
+        width: 100%;
+        @include position(relative, 50% null null 0);
+        transform: translate(0, -50%);
+    }
     h1 {
         color: $dark-blue;
         font-weight: 700;
