@@ -38,8 +38,12 @@
     }
     #works {
         padding: 40px 0 100px;
-        a, p {
-            margin: 0 0 20px;
+        a {
+            margin-top: -5px;
+        }
+        a,
+        p {
+            margin-bottom: 20px;
         }
         a:after {
             top: 8px;
