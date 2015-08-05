@@ -1,8 +1,16 @@
-@keyframes shake{
-	0% { transform: rotateZ(0deg) translate(-50%, -50%); }
-    35% { transform: rotateZ(-6deg) translate(-50%, -50%); }
-    65% { transform: rotateZ(3deg) translate(-50%, -50%); }
-	100% { transform: rotateZ(0deg) translate(-50%, -50%); }
+@keyframes shake {
+    0% {
+        transform: rotateZ(0deg) translate(-50%, -50%);
+    }
+    35% {
+        transform: rotateZ(-6deg) translate(-50%, -50%);
+    }
+    65% {
+        transform: rotateZ(3deg) translate(-50%, -50%);
+    }
+    100% {
+        transform: rotateZ(0deg) translate(-50%, -50%);
+    }
 }
 
 body {
@@ -12,34 +20,44 @@ body {
 }
 
 .hi {
-	@include position(fixed, 20px 20px null null);
-	background: $green;
-	width: 60px;
-	height: 60px;
-	border-radius: 50%;
-	display: block;
-	z-index: 10;
-	transition: all 150ms ease;
-	span {
-		display: block;
-		width: 32px;
-		height: 28px;
-		background: url(../images/bubble.png) no-repeat center center;
-		background-size: 32px;
-		@include position(absolute, 50% null null 50%);
-		transform: translate(-50%, -50%);
-		line-height: 28px;
-		color: $green;
-		padding-left: 3px;
-		font-size: 14px;
-		box-sizing: border-box;
-		transition: all 150ms ease;
-	}
-	&:hover {
-		background: $blue;
-		span {
-			color: $blue;
-			animation: shake 300ms;
-		}
-	}
+    @include position(fixed, 20px 20px null null);
+    background: $green;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: block;
+    z-index: 10;
+    transition: all 150ms ease;
+    span {
+        display: block;
+        width: 32px;
+        height: 28px;
+        background: url(../images/bubble.png) no-repeat center center;
+        background-size: 32px;
+        @include position(absolute, 50% null null 50%);
+        transform: translate(-50%, -50%);
+        line-height: 28px;
+        color: $green;
+        padding-left: 3px;
+        font-size: 14px;
+        box-sizing: border-box;
+        transition: all 150ms ease;
+    }
+    &:hover {
+        background: $blue;
+        span {
+            color: $blue;
+            animation: shake 300ms;
+        }
+    }
+}
+
+::-moz-selection {
+    background: $green;
+    color: white;
+}
+
+::selection {
+    background: $green;
+    color: white;
 }

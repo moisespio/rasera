@@ -1,48 +1,79 @@
-/*@media (max-width: 992px) {
-    // Presentation Title
-    #presentation .content h1 {
-        font-size: 80px;
+/* Tablets */
+
+@media (max-width: 992px) {
+    /* Font size */
+    
+    #presentation .content,
+    #about,
+    #details,
+    #works,
+    #talk .content {
+        h2, h3, h4, ul, li, p, a {
+            font-size: 20px;
+        }
     }
-    #presentation .content .typed-cursor {
-        font-size: 110px;
+    /* Presentation */
+    
+    #presentation .content {
+        h1 {
+            font-size: 80px;
+        }
+        .typed-cursor {
+            font-size: 110px;
+        }
+        h3 {
+            margin: 20px 0;
+        }
     }
-    .hi {
-        @include position(fixed, 10px 10px null null);
+    /* About & Works */
+    
+    #about {
+        padding: 100px 80px 40px;
+        h4 {
+            margin: 40px 0 10px;
+        }
+        p {
+            font-size: 26px;
+        }
     }
+    #works {
+        padding: 40px 80px 100px;
+        a, p {
+            margin: 0 0 20px;
+        }
+        a:after {
+            top: 8px;
+            left: 10px;
+            width: 28px;
+            height: 28px;
+            background: url(../images/arrow.png) 10px center no-repeat;
+            background-size: 6px;
+        }
+    }
+    #about,
+    #works {
+        h2 {
+            margin: 0 0 20px 0;
+        }
+    }
+    /* Work */
+    
     .owl-nav {
         display: none;
     }
-}
-
-@media (max-width: 768px) {
-    body {
-        font-size: 15px;
-    }
-    h2 {
-        margin-bottom: 20px;
-        font-size: 20px;
-    }
-    #presentation .content h1 {
-        font-size: 40px;
-    }
-    #presentation .content .typed-cursor {
-        font-size: 60px;
-    }
-    #about {
-        line-height: 20pt;
-    }
-    #about p {
-        font-size: 20px;
-        line-height: 30pt;
+    /* Talk */
+    
+    #talk .content {
+        h1 {
+            font-size: 60px;
+            margin-bottom: 60px;
+        }
+        .button {
+            margin-top: 60px;
+            padding: 19px 50px;
+            font-size: 18px;
+        }
     }
 }
 
-::-moz-selection {
-    background: $green;
-    color: white;
-}
-
-::selection {
-    background: $green;
-    color: white;
-}*/
+@media (max-width: 768px) {}
