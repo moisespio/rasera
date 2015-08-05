@@ -12,8 +12,8 @@ $('.carousel').owlCarousel({
     startPosition: 'URLHash',
     dots: false,
 });
-
+/*
 var istouchdevice = 'ontouchstart' in document.documentElement;
-if(!istouchdevice){
+if (!istouchdevice) {
     var s = skrollr.init();
-};
+};*/

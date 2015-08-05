@@ -27,11 +27,11 @@ body {
     border-radius: 50%;
     display: block;
     z-index: 10;
-    transition: all 150ms ease;
+    transition: all 200ms ease;
     span {
-        display: block;
         width: 32px;
         height: 28px;
+        display: block;
         background: url(../images/bubble.png) no-repeat center center;
         background-size: 32px;
         @include position(absolute, 50% null null 50%);
@@ -41,13 +41,13 @@ body {
         padding-left: 3px;
         font-size: 14px;
         box-sizing: border-box;
-        transition: all 150ms ease;
+        transition: all 200ms ease;
     }
     &:hover {
         background: $blue;
         span {
             color: $blue;
-            animation: shake 300ms;
+            animation: shake 200ms;
         }
     }
 }

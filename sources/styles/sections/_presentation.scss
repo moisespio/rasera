@@ -9,12 +9,13 @@
         opacity: 1;
     }
 }
+
 #presentation {
     height: 100vh;
     text-align: center;
     .content {
         width: 100%;
-        @include position(absolute, 50% null null 0);
+        @include position(absolute, 50% null null);
         transform: translate(0, -50%);
         h1 {
             color: $dark-blue;
@@ -25,11 +26,12 @@
             display: inline-block;
         }
         .typed-cursor {
-            opacity: 1;
-            animation: blink 0.7s infinite;
             color: $blue;
             font-size: 140px;
-            font-weight: 600;
+            font-weight: 700;
+            opacity: 1;
+            animation: blink 800ms infinite;
+            display: inline-block;
         }
         h3 {
             color: $grey;
@@ -38,8 +40,9 @@
         }
         ul {
             li {
-                display: inline-block;
                 margin: 0 10px;
+                line-height: 20pt;
+                display: inline-block;
                 a {
                     color: $green;
                     text-decoration: none;
@@ -50,7 +53,6 @@
                         @include position(absolute, 25px null 0 0);
                         content: '';
                         background: $green;
-                        /*transition: all 150ms ease;*/
                     }
                     &:hover {
                         &:after {
