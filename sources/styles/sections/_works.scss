@@ -1,7 +1,7 @@
 #works {
     color: $grey;
     background: $light-grey;
-    padding: 60px 0 160px;
+    padding: 60px 0 140px;
     line-height: 25pt;
     h2 {
         color: $blue;
@@ -24,5 +24,20 @@
             top: 10px;
             left: 20px;
         }
+    }
+}
+/* Older works */
+#older {
+    color: $grey;
+    background: $light-grey;
+    padding: 60px 0 60px;
+    line-height: 25pt;
+    h2 {
+        color: $blue;
+    }
+    ul { list-style: none; }
+    li {
+        margin: 0 20px 0 0;
+        display: inline-block;
     }
 }

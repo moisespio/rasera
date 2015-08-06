@@ -137,8 +137,20 @@
     }
     /* Details */
     
+    #details ul {
+        top: 645px;
+    }
     .owl-nav {
         display: none;
+    }
+    .carousel {
+        .carousel-item {
+            height: 700px;
+        }
+        .item-one,
+        .item-two {
+            background-size: 290px;
+        }
     }
     /* Talk */
     

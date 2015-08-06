@@ -52,6 +52,10 @@ body {
     }
 }
 
+.hideme {
+    opacity: 0;
+}
+
 ::-moz-selection {
     background: $green;
     color: white;

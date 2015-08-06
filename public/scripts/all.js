@@ -17,3 +17,4 @@ var istouchdevice = 'ontouchstart' in document.documentElement;
 if (!istouchdevice) {
     var s = skrollr.init();
 };
+
