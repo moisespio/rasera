@@ -12,21 +12,23 @@
         margin: -10px 0 20px;
         text-decoration: none;
         &:after {
+            position: relative;
             display: inline-block;
             border-radius: 50%;
             width: 32px;
             height: 32px;
             border: 2px solid $green;
             background: url(../images/arrow.png) 12px center no-repeat;
-            background-size: 6px;
+            background-size: 11px;
             content: '';
-            position: relative;
             top: 10px;
             left: 20px;
         }
     }
 }
-/* Older works */
+
+/* Older stuff */
+
 #older {
     color: $grey;
     background: $light-grey;
@@ -35,9 +37,25 @@
     h2 {
         color: $blue;
     }
-    ul { list-style: none; }
-    li {
+    ul li {
         margin: 0 20px 0 0;
         display: inline-block;
+    }
+    a {
+        color: $grey;
+        text-decoration: none;
+        position: relative;
+        &:after {
+            width: 0%;
+            height: 2px;
+            @include position(absolute, 25px null 0 0);
+            content: '';
+            background: $grey;
+        }
+        &:hover {
+            &:after {
+                width: 100%;
+            }
+        }
     }
 }

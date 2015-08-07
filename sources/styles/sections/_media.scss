@@ -70,14 +70,22 @@
     
     #presentation .content,
     #about,
-    #details,
     #works,
+    #details,
+    #older,
     #talk .content {
         h3, h4, ul, li, p, a {
             font-size: 16px;
         }
         h2 {
             font-size: 20px;
+        }
+    }
+    #presentation .content ul li a,
+    #talk .content ul li a,
+    #older a {
+        &:after {
+            @include position(absolute, 20px null 0 0);
         }
     }
     /* Presentation */
@@ -132,7 +140,7 @@
             width: 28px;
             height: 28px;
             background: url(../images/arrow.png) 10px center no-repeat;
-            background-size: 6px;
+            background-size: 11px;
         }
     }
     /* Details */

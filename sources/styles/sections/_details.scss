@@ -2,8 +2,8 @@
     background: white;
     ul {
         color: white;
-        position: relative;
         top: 835px;
+        position: relative;
         display: inline-block;
         padding: 0 18px;
         border-radius: 50px;
@@ -24,11 +24,11 @@
     line-height: 2;
     .owl-nav {
         div {
+            width: 16px;
+            height: 100px;
             position: absolute;
             top: 50%;
             margin-top: -50px;
-            width: 16px;
-            height: 100px;
             z-index: 5;
             overflow: hidden;
             text-indent: -1000px;
@@ -56,24 +56,19 @@
             display: inline-block;
             margin: 0 5px;
         }
-        .container {
+        .col-md-12 {
             height: 100%;
-            .row {
-                position: relative;
-                height: 100%;
-                .col-md-12 {
-                    position: relative;
-                    text-align: center;
-                }
-            }
+            text-align: center;
         }
     }
-    .item-one {
-        background: url(../images/h_cosmo.png) $green no-repeat center center;
-        background-size: 374px;
-    }
-    .item-two {
-        background: url(../images/h_copycat.png) $blue no-repeat center center;
-        background-size: 374px;
-    }
+}
+
+.item-one {
+    background: url(../images/h_cosmo.png) $green no-repeat center center;
+    background-size: 374px;
+}
+
+.item-two {
+    background: url(../images/h_cosmo.png) $blue no-repeat center center;
+    background-size: 374px;
 }
