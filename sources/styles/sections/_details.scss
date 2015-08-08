@@ -1,13 +1,18 @@
 #details {
+    color: white;
     background: white;
+    line-height: 20pt;
     ul {
-        color: white;
-        top: 835px;
+        top: 840px;
         position: relative;
         display: inline-block;
-        padding: 0 18px;
+        padding: 6px 18px;
         border-radius: 50px;
         border: 2px solid white;
+    }
+    li {
+        display: inline-block;
+        margin: 0 5px;
     }
     a {
         color: white;
@@ -19,9 +24,9 @@
 }
 
 .carousel {
-    position: relative;
     width: 100%;
-    line-height: 2;
+    position: relative;
+    text-align: center;
     .owl-nav {
         div {
             width: 16px;
@@ -50,25 +55,16 @@
     .carousel-item {
         width: 100%;
         height: 900px;
-        color: white;
         transform: translate3d(0, 0, 0);
-        li {
-            display: inline-block;
-            margin: 0 5px;
-        }
-        .col-md-12 {
-            height: 100%;
-            text-align: center;
-        }
     }
 }
 
 .item-one {
     background: url(../images/h_cosmo.png) $green no-repeat center center;
-    background-size: 374px;
+    background-size: 382px;
 }
 
 .item-two {
     background: url(../images/h_cosmo.png) $blue no-repeat center center;
-    background-size: 374px;
+    background-size: 382px;
 }

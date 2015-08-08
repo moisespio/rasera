@@ -13,8 +13,7 @@ $('.carousel').owlCarousel({
     dots: false,
 });
 
-var istouchdevice = 'ontouchstart' in document.documentElement;
+/*var istouchdevice = 'ontouchstart' in document.documentElement;
 if (!istouchdevice) {
     var s = skrollr.init();
-};
-
+};*/
