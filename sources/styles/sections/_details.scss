@@ -60,11 +60,16 @@
 }
 
 .item-one {
-    background: url(../images/h_cosmo.png) $green no-repeat center center;
-    background-size: 382px;
+    transition: background 200ms ease;
+    background: url(../images/screens/w-Cosmo-5.png) $green no-repeat center center;
 }
 
 .item-two {
-    background: url(../images/h_mimic.png) $blue no-repeat center center;
+    transition: background 200ms ease;
+    background: url(../images/screens/w-Mimic-3.png) $blue no-repeat center center;
+}
+
+.item-one,
+.item-two {
     background-size: 382px;
 }

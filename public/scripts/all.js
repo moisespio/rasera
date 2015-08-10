@@ -10,10 +10,17 @@ $('.carousel').owlCarousel({
     center: true,
     URLhashListener: true,
     startPosition: 'URLHash',
-    dots: false,
+    dots: false
 });
 
-/*var istouchdevice = 'ontouchstart' in document.documentElement;
-if (!istouchdevice) {
-    var s = skrollr.init();
-};*/
+$('.ip-one a').click(function () {
+    var ip = $(this).attr('href');
+    $('.item-one').css('background-image', 'url(public/images/screens/w-' + ip + '.png)');
+    return false;
+});
+
+$('.ip-two a').click(function () {
+    var ip = $(this).attr('href');
+    $('.item-two').css('background-image', 'url(public/images/screens/w-' + ip + '.png)');
+    return false;
+});
