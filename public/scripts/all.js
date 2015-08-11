@@ -25,3 +25,21 @@ $('.ip-two a').click(function () {
     return false;
 });
 
+// Pre
+
+var images = new Array()
+
+function preload() {
+    for (i = 0; i < preload.arguments.length; i++) {
+        images[i] = new Image()
+        images[i].src = preload.arguments[i]
+    }
+}
+preload(
+    "public/images/screens/w-Cosmo-1.png",
+    "public/images/screens/w-Cosmo-2.png",
+    "public/images/screens/w-Cosmo-3.png",
+    "public/images/screens/w-Cosmo-4.png",
+    "public/images/screens/w-Mimic-1.png",
+    "public/images/screens/w-Mimic-2.png"
+)

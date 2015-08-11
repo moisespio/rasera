@@ -1,5 +1,4 @@
-/* --------------------------------------- */
-/* --------------- Tablets --------------- */
+/* Tablets */
 
 @media (max-width: 992px) {
     /* Presentation */
@@ -54,12 +53,10 @@
         }
     }
 }
-
-/* -------------------------------------- */
-/* --------------- Phones --------------- */
+/* Phones  */
 
 @media (max-width: 768px) {
-    /* No "Hi" ballon */
+    /* No "Hi" balloon */
     
     .hi {
         display: none;
@@ -70,7 +67,7 @@
     #about,
     #works,
     #details,
-    #older,
+    #other,
     #talk .content {
         h3, h4, ul, li, p, a {
             font-size: 16px;
@@ -83,7 +80,7 @@
     
     #presentation .content ul li a,
     #talk .content ul li a,
-    #older a {
+    #other a {
         &:after {
             @include position(absolute, 20px null 0 0);
         }
@@ -105,7 +102,7 @@
             line-height: 18ept;
         }
     }
-    /* About & Works */
+    /* About & works */
     
     #about {
         padding: 60px 0 30px;
@@ -141,6 +138,19 @@
             height: 28px;
             background: url(../images/arrow.png) 10px center no-repeat;
             background-size: 11px;
+        }
+    }
+    #other {
+        line-height: 18pt;
+        ul li {
+            margin: 0 0 10px 0;
+            display: list-item;
+        }
+        ul li:last-child {
+            margin: 0 0 0 0;
+        }
+        h2 {
+            margin-bottom: 20px;
         }
     }
     /* Details */
