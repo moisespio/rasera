@@ -6,7 +6,7 @@ $('#presentation h1').typed({
 $('.carousel').owlCarousel({
     items: 1,
     nav: true,
-    navSpeed: 800,
+    navSpeed: 400,
     center: true,
     URLhashListener: true,
     startPosition: 'URLHash',
@@ -14,13 +14,14 @@ $('.carousel').owlCarousel({
 });
 
 $('.ip-one a').click(function () {
-    var ip = $(this).attr('href');
-    $('.item-one').css('background-image', 'url(public/images/screens/w-' + ip + '.png)');
+    var ip_one = $(this).attr('href');
+    $('.item-one').css('background-image', 'url(public/images/screens/w-' + ip_one + '.png)');
     return false;
 });
 
 $('.ip-two a').click(function () {
-    var ip = $(this).attr('href');
-    $('.item-two').css('background-image', 'url(public/images/screens/w-' + ip + '.png)');
+    var ip_two = $(this).attr('href');
+    $('.item-two').css('background-image', 'url(public/images/screens/w-' + ip_two + '.png)');
     return false;
 });
+

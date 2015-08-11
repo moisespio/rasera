@@ -6,9 +6,12 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Paulo Rasera</title>
+    <title>Rasera.me</title>
     <link href="http://fonts.googleapis.com/css?family=Roboto:400,300,700" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="public/styles/main.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="public/images/16-fav.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="public/images/32-fav.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="public/images/196-fav.png">
 </head>
 
 <body>
@@ -54,11 +57,11 @@
                     <h2>Working on</h2>
                 </div>
                 <div class="col-xs-6 col-sm-4">
-                    <a href="#cosmo.app">Cosmo</a>
+                    <a href="#Cosmo-App">Cosmo</a>
                     <p>A simple and minimalist game under developement for iOS.</p>
                 </div>
                 <div class="col-xs-6 col-sm-4">
-                    <a href="#mimic.app">Mimic</a>
+                    <a href="#Mimic-App">Mimic</a>
                     <p>Share images based on other users content, that is Mimic purpose.</p>
                 </div>
             </div>
@@ -68,7 +71,7 @@
     <section id="details">
         <div class="carousel">
             <!-- Item 1 -->
-            <div class="carousel-item item-one" data-hash="cosmo.app">
+            <div class="carousel-item item-one" data-hash="Cosmo-App">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
@@ -90,7 +93,7 @@
                 </div>
             </div>
             <!--Item 2 -->
-            <div class="carousel-item item-two" data-hash="mimic.app">
+            <div class="carousel-item item-two" data-hash="Mimic-App">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
@@ -114,7 +117,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-4">
-                    <h2>Older stuff</h2>
+                    <h2>Other works</h2>
                 </div>
                 <div class="col-xs-8">
                     <ul>
@@ -145,6 +148,28 @@
     </section>
     <script type="text/javascript" src="public/scripts/vendor.js"></script>
     <script type="text/javascript" src="public/scripts/all.js"></script>
+    <div class="hidden">
+        <script type="text/javascript">
+            <!--//--><![CDATA[//><!--
+            var images = new Array()
+
+            function preload() {
+                for (i = 0; i < preload.arguments.length; i++) {
+                    images[i] = new Image()
+                    images[i].src = preload.arguments[i]
+                }
+            }
+            preload(
+                    "public/images/screens/w-Cosmo-1.png",
+                    "public/images/screens/w-Cosmo-2.png",
+                    "public/images/screens/w-Cosmo-3.png",
+                    "public/images/screens/w-Cosmo-4.png",
+                    "public/images/screens/w-Mimic-1.png",
+                    "public/images/screens/w-Mimic-2.png"
+                )
+                //--><!]]>
+        </script>
+    </div>
 </body>
 
 </html>
