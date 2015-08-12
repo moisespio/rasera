@@ -1,59 +1,62 @@
 #talk {
     height: 100vh;
     text-align: center;
-    line-height: 20pt;
     .content {
         width: 100%;
         @include position(relative, 50% null null);
         transform: translate(0, -50%);
-    }
-    h1 {
-        color: $dark-blue;
-        font-weight: 700;
-        font-size: 70px;
-        text-transform: uppercase;
-        margin-bottom: 80px;
-    }
-    p {
-        color: $grey;
-    }
-    ul {
-        margin-top: 20px;
-        li {
-            margin: 0 10px;
-            line-height: 20pt;
+        h1 {
+            color: $dark-blue;
+            font-weight: 700;
+            font-size: 70px;
+            letter-spacing: -1pt;
+            text-transform: uppercase;
             display: inline-block;
-            a {
-                color: $green;
-                text-decoration: none;
-                position: relative;
-                &:after {
-                    width: 0%;
-                    height: 2px;
-                    @include position(absolute, 25px null 0 0);
-                    content: '';
-                    background: $green;
-                }
-                &:hover {
+            margin-bottom: 80px;
+        }
+        p {
+            color: $grey;
+            line-height: 20pt;
+        }
+        ul {
+            margin-top: 20px;
+            line-height: 20pt;
+            li {
+                margin: 0 10px;
+                line-height: 20pt;
+                display: inline-block;
+                a {
+                    color: $green;
+                    text-decoration: none;
+                    position: relative;
                     &:after {
-                        width: 100%;
+                        width: 0%;
+                        height: 2px;
+                        @include position(absolute, 25px null 0 0);
+                        content: '';
+                        background: $green;
+                    }
+                    &:hover {
+                        &:after {
+                            width: 100%;
+                        }
                     }
                 }
             }
         }
-    }
-    .button {
-        margin-top: 80px;
-        display: inline-block;
-        border: 2px solid $green;
-        padding: 20px 60px;
-        border-radius: 50px;
-        color: $green;
-        text-decoration: none;
-        transition: all 200ms ease;
-        &:hover {
-            background: $green;
-            color: white;
+        .button {
+            margin-top: 80px;
+            display: inline-block;
+            border: 2px solid $green;
+            padding: 20px 60px;
+            border-radius: 50px;
+            color: $green;
+            text-decoration: none;
+            transition: all 200ms ease;
+            &:hover {
+                background: $green;
+                color: white;
+            }
         }
     }
 }

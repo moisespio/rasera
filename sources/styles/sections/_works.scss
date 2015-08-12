@@ -2,14 +2,18 @@
     color: $grey;
     background: $light-grey;
     padding: 60px 0 140px;
-    line-height: 25pt;
     h2 {
+        line-height: 25pt;
         color: $blue;
+    }
+    p {
+        line-height: 25pt;
     }
     a {
         color: $green;
         display: inline-block;
-        margin: -10px 0 20px;
+        line-height: 40pt;
+        margin: -10px 0 0;
         text-decoration: none;
         &:after {
             position: relative;
@@ -27,6 +31,7 @@
     }
 }
 
+
 /* Other stuff */
 
 #other {
@@ -37,9 +42,11 @@
     h2 {
         color: $blue;
     }
-    ul li {
-        margin: 0 20px 0 0;
-        display: inline-block;
+    ul {
+        li {
+            margin: 0 20px 0 0;
+            display: inline-block;
+        }
     }
     a {
         color: $grey;
