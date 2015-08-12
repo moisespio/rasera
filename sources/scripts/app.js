@@ -36,10 +36,10 @@ function preload() {
     }
 }
 preload(
-    "public/images/screens/w-Cosmo-1.png",
-    "public/images/screens/w-Cosmo-2.png",
-    "public/images/screens/w-Cosmo-3.png",
-    "public/images/screens/w-Cosmo-4.png",
-    "public/images/screens/w-Mimic-1.png",
-    "public/images/screens/w-Mimic-2.png"
+    "public/images/screens/w-cosmo-1.png",
+    "public/images/screens/w-cosmo-2.png",
+    "public/images/screens/w-cosmo-3.png",
+    "public/images/screens/w-cosmo-4.png",
+    "public/images/screens/w-mimic-1.png",
+    "public/images/screens/w-mimic-2.png"
 )
