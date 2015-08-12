@@ -25,7 +25,7 @@ $('.ip-two a').click(function () {
     return false;
 });
 
-// Pre
+// Pre-loader
 
 var images = new Array()
 
